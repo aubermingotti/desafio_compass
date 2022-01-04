@@ -1,19 +1,184 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="StyleAlimentação.css" />
-    <title>Compania do Cachorro</title>
+    
   </head>
   <body>
-    <a href="index.html"
-      ><header><h1>Compania do Cachorro</h1></header></a
+    <header>
+      <nav class="topnav navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <ul class="navbar-nav">
+
+              </li>
+          
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Página Inicial</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alimentacao.html">Alimentação</a>
+            </li>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-contato"
+                  href="#"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bitcoin">
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-contato"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
     >
+      <div class="modal-dialog">
+        <dialog class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </header>
+          <main class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput" class="nome">Nome</label>
+                
+                <input
+                required
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Benzera da Silva"
+                />
+              </div>
+              <div class="form-group">
+                <label class="nome" for="exampleFormControlInput1"> E-mail</label>
+                <input
+                required
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="nomeuser@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="nome" for="exampleFormControlTextarea1"
+                  >Deixe seu Comentário</label
+                >
+                <textarea
+                  class="form-control"
+                  placeholder="digite seu comentário"
+                  id="txt2"
+                  rows="10"
+                ></textarea>
+              </div>
+            </form>
+          </main>
+          <footer class="modal-footer">
+            
+            <button id="Enviar" type="button" class="btn botao-especial" onclick="requisitar()" aria-required="">Enviar</button>        
+          </footer>
+        </dialog>
+      </div>
+    </div>
+
+    <div>
+       <h1>O que o cachorro pode comer além da ração?</h1>
+
+       <img class="root" src="assets/alimentação.jpg" alt="">
+    
+      </div>
+
+      <div>
+      <p><br>Você está almoçando e chega o seu peludo, com cara de coitado e pedindo um pouquinho do seu almoço… Todo mundo já passou por isso, não é? A vontade de dividir o prato com o amigo pode até ser grande, mas é importante lembrar cachorro não pode comer qualquer tipo de alimento.
+
+        O ideal é dar ração de qualidade, voltada para a idade do seu pet. Contudo, para matar a sua vontade e a dele, existem alguns alimentos que podem ser oferecidos ao peludo. Claro que devem ser fornecidos em pequena quantidade, como substitutos do petisco e não da ração. Opte por pedaços pequenos e forneça apenas às vezes.
+        
+        Quer deixar o seu cachorrinho feliz agora mesmo? Então conheça alguns alimentos que cachorro pode comer e divirta-se com a felicidade do seu peludo!</p>
+
+
+      </div>
+
+      <h3>1. Cachorro pode comer abóbora</h3>
+
+
+      <p><br>Se você tem uma dieta mais controlada e ingere muita batata-doce, pode comemorar, pois o seu peludo poderá acompanhá-lo! O alimento tem bastante vitamina E e pode ser oferecido, às vezes, ao pet.
+
+        Sirva cozida, morna ou fria, e sem tempero nenhum. Não coloque nem sal. Eles costumam gostar.</p>
+
+        <h3>3. Banana também pode ser oferecida ao cão de estimação</h3>
+        <p><br>O alimento é rico em potássio, vitamina B6 e magnésio. Caso o seu cachorro peça, enquanto você está comendo, ofereça um pedaço a ele.
+
+          Lembre-se de que a fruta deve estar descascada e pura, ou seja, sem açúcar. Não são todos os cães que comem. Caso ele cheire e não queira, não force. Apenas lembre-se de que esse alimento não está entre os preferidos do pet.</p>
+
+          <h3>4. Brócolis</h3>
+
+          <p><br>Que brócolis faz bem para a sua saúde e que é um alimento muito nutritivo, você já sabe! O melhor de tudo é que você pode oferecer esses nutrientes também para o seu animal de estimação.
+
+            Cachorro pode comer brócolis e aproveitar o zinco, ferro, potássio, entre outros nutrientes existentes no alimento. Cozinhe no vapor e ofereça sem tempero.
+            
+            Alguns pets gostam de receber brócolis como petisco. Já outros, preferem misturado à ração. Descubra como o seu peludo mais gosta.</p>
+
+            <h3>5. Cenoura</h3>
+
+            <p><br>Fonte de vitamina A e de betacaroteno, a cenoura é amada por alguns pets. O cachorro pode comer crua, para roer e se divertir, ou cozida, sem tempero.
+
+              O interessante de oferecer crua é que além de ele se entreter mastigando, ao roer, ela ajuda a limpar os dentes do pet.</p>
+
+              <h3>6. Chuchu</h3>
+
+              <p><br>Quer agradar o peludo? Ofereça chuchu cozido. A maioria deles adora e não há restrição.
+
+                Cozinhe sem tempero e ofereça como substituto do petisco ou misturado na ração. Como é pouco calórico, pode ser oferecido até para os pets que estão acima do peso.</p>
+    
+                <h3>7. Maçã </h3>
+    
+                <p><br>Também pode ser dada ao cachorro, sem casca e em pedacinhos. É ótima fonte de fibras e de vitaminas B, C e E. Retire a semente e o miolo.</p>
+                <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
