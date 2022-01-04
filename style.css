@@ -15,6 +15,7 @@ button#Enviar {
 .video {
   margin-left: 30% !important;
   margin-top: 50px;
+  border-radius: 10px;
   margin-bottom: 4% !important;
 }
 h3,
