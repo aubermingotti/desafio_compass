@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contatos</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h3 id="t1">Compania do Cachorro</h3></a>
+    </header>
+    <header class="cores">
+      <div class="Caixa"></div>
+    </header>
+
+    <main>
+      <form>
+        <label for="NomeSobrenome">Nome e Sobrenome: </label>
+        <input type="text" id="NomeSobrenome" class="input-padrao" required />
+
+        <label for="E-mail">E-mail:</label>
+        <input
+          type="email"
+          id="E-mail"
+          class="input-padrao"
+          required
+          placeholder="Email@Domínio.com"
+        />
+
+        <label for="Telefone">Telefone: </label>
+        <input
+          type="tel"
+          id="Telefone"
+          class="input-padrao"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+        />
+
+        <input onclick="logar()" id="enviar" type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy;CompaniadoCachorro</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
