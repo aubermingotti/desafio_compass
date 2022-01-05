@@ -23,3 +23,35 @@ function Linkar() {
   })
   realizarPedicaoApiLeo.send(data)
 }
+
+function findBreedImage() {
+  let imgsrc = ''
+  var breed = document.getElementById('inputTeste').value
+  let dogApiUrl = 'https://dog.ceo/api/breed/' + breed + '/images/random'
+
+  var url = dogApiUrl //Url do
+
+  var xhttp = new XMLHttpRequest()
+  xhttp.open('GET', url, true)
+
+  xhttp.onreadystatechange = function () {
+    //Função a ser chamada quando a requisição retornar do servidor
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      //Verifica se o retorno do servidor deu certo
+
+      let response = xhttp.responseText //Resposta da chama a API
+      response = JSON.parse(response) //Converte String para JSON
+
+      imgsrc = response.message //Acessa o elemento message do objeto
+      //console.log(imgsrc)
+
+      var newDogImage = document.getElementById('dogImage')
+
+      newDogImage.src = imgsrc //Altera o caminho da imagem
+      newDogImage.style.width = '500px' //Altera a largura da imagem
+      newDogImage.style.height = '500px' //Altera a altura da imagem
+    }
+  }
+
+  xhttp.send() //A execução do script continuará mesmo que a requisição não tenha retornado do servidor
+}
